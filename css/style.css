@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.bg-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url(http://kan-drog.pl/wp-content/uploads/2016/10/polbruk-szary.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper {
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ccc;
+    box-shadow: 5px 5px 5px rgba(41, 41, 41, 0.637);
+}
+
+
+button {
+    background-color: #33cc33;
+    width: 150px;
+    height: 30px;
+    margin: 30px;
+    border: 0px;
+}
+
+button:hover {
+    background-color: #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+
+thead {
+    background-color: rgba(0, 0, 0, 0.836);
+    color: rgb(255, 255, 255);
+
+}
+
+td {
+    padding: 5px;
+    border: 1px solid rgb(233, 233, 233);
+    width: 200px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polbruk - kalkulator kostki</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Limelight&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="bg-img"></div>
+
+    <div class="wrapper">
+      <h1>Kalkulator układania kostki betonowej</h1>
+
+      <h2>Szerokość placu/chodnika (cm):</h2>
+      <input id="szerokosc" value="264" />
+
+      <h2>Dostępne rozmiary kostek (cm):</h2>
+
+      <p>Szerokość 1 kostki:</p>
+      <input id="kostka1" value="9" />
+
+      <p>Szerokość 2 kostki:</p>
+      <input id="kostka2" value="12" />
+
+      <p>Szerokość 3 kostki:</p>
+      <input id="kostka3" value="18" />
+
+      <button id="click" onClick="solveIt()">Oblicz</button>
+    </div>
+
+    <div class="wrapper">
+      <p>Możliwe kombinacje ułożeń:</p>
+      <table>
+        <thead>
+          <tr>
+            <td>KOSTKA 1</td>
+            <td>KOSTKA 2</td>
+            <td>KOSTKA 3</td>
+          </tr>
+        </thead>
+        <tbody id="lista"></tbody>
+      </table>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
